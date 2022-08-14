@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -24,8 +25,14 @@ Route::get('/email', function() {
 });
 
 Route::group(['prefix'=>'admin','as'=>'admin.'], function(){
-    Route::get('/', [DashboardController::class, 'index']);
-    
-    Route::get('/inquiries', [DashboardController::class, 'inquiries']);
-    Route::get('/inquiries/list', [DashboardController::class, 'inquiries_list'])->name('inquiries.list');
+
+    Route::get('/login', [AuthController::class, 'login'])->name('login');
+    Route::post('/login', [AuthController::class, 'post_login'])->name('login.post');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+    Route::group(['middleware'=>'auth'], function() {
+        Route::get('/', [DashboardController::class, 'index'])->name('index');
+        Route::get('/inquiries', [DashboardController::class, 'inquiries'])->name('inquiries');
+        Route::get('/inquiries/list', [DashboardController::class, 'inquiries_list'])->name('inquiries.list');
+    });    
 });

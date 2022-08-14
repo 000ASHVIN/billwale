@@ -10,6 +10,7 @@ use DataTables;
 class DashboardController extends Controller
 {
     public function index() {
+        return redirect()->route('admin.inquiries');
         return view('admin.dashboard');
     }
 

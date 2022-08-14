@@ -35,7 +35,7 @@
         }
         .inquiry_form input {
             width: 100%;
-            padding: 5px;
+            padding: 5px 10px;
         }
         .inquiry_form input[type='checkbox'] {
             width: auto;
@@ -53,6 +53,9 @@
             background-color: #122F97;
             margin-top: 20px;
             padding: 15px 30px;
+        }
+        .inquiry_form > div {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -122,7 +125,8 @@
     {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> --}}
     
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    {{-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
     
     <script>
@@ -197,7 +201,12 @@
     </script>
     @if (request()->session()->has('status'))
         <script>
-            swal("Thank you", "Thanks for inquiry!", "success");
+            Swal.fire(
+                "Thank you",
+                "Thanks for inquiry!",
+                "success"
+            )
+            // swal("Thank you", "Thanks for inquiry!", "success");
         </script>
     @endif
 </body>

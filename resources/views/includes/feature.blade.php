@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="row">
             
-            <div class="col-lg-4 col-md-6"><img src="{{ asset('assets/images/home/about2.png') }}" alt="" class="w-100 pt-5"></div>
+            <div class="col-lg-3 col-md-6"><img src="{{ asset('assets/images/home/about2.png') }}" alt="" class="w-100 pt-5"></div>
             <div class="col-lg-4 col-md-6">
                 <div class="details-inner-section">
                     <h4 class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
@@ -26,7 +26,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-5 col-md-12">
                 <div class="form-info">
                     <div class="inquiry-now-title row">
                         <div class="col-md-12">
