@@ -25,4 +25,7 @@ Route::get('/email', function() {
 
 Route::group(['prefix'=>'admin','as'=>'admin.'], function(){
     Route::get('/', [DashboardController::class, 'index']);
+    
+    Route::get('/inquiries', [DashboardController::class, 'inquiries']);
+    Route::get('/inquiries/list', [DashboardController::class, 'inquiries_list'])->name('inquiries.list');
 });
