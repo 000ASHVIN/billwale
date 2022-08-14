@@ -88,8 +88,13 @@
                                 <p class="terms_error error" style="display: none;"><b>Please accept terms and conditions.</b></p>
                             </div>
 
-                            <div class="col-md-12 form-group form-submit">
-                                <button class="bg-submit" type="submit">Submit</button>
+                            <div class="col-md-12 form-group form-submit">                                  
+                                <button class="bg-submit" type="submit">
+                                    <span class="spinner-border text-light" role="status" style="display: none;">
+                                        <span class="sr-only"></span>
+                                    </span>
+                                    <span class="submit-text">Submit</span>
+                                </button>
                             </div>
                         </div>
                     </form>

@@ -57,6 +57,19 @@
         .inquiry_form > div {
             margin-bottom: 10px;
         }
+        .bg-submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .submit-text {
+            margin-left: 10px;
+        }
+        .spinner-border {
+            height: 22px;
+            width: 22px;
+            border-width: 3px;
+        }
     </style>
 </head>
 
@@ -183,7 +196,18 @@
                 },
                 messages: {
                     // terms: "Please accept terms and conditions."
+                },
+                success: function(label) {
+                    
                 }
+            });
+
+            $( ".bg-submit" ).click(function() {
+                console.log($('#inquiry_form').valid())
+                if($('#inquiry_form').valid()) {
+                    $('.spinner-border').show();
+                }
+                // alert( "Valid: " + form.valid() );
             });
 
             $('#state').change(function() {
