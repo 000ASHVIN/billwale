@@ -49,83 +49,37 @@
             font-size: 12px !important;
             color: red !important;
         }
+        .logo img {
+            background-color: #122F97;
+            margin-top: 20px;
+            padding: 15px 30px;
+        }
     </style>
 </head>
 
 <body>
 
     <div>
-        <nav class="bg-header navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid"><a href="#home" class="navbar-brand"><img src="{{ asset('assets/images/home/billwale.png') }}"
-                        alt=""></a>
-                    {{-- <button aria-controls="responsive-navbar-nav" type="button"
-                    aria-label="Toggle navigation" class="navbar-toggler collapsed"><span
-                        class="navbar-toggler-icon"></span></button> --}}
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsive-navbar-nav" aria-controls="responsive-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="navbar-collapse collapse" id="responsive-navbar-nav">
-                    <div class="ml-auto navbar-nav"><a href="#home" data-rb-event-key="#home"
-                            class="nav-link">Home</a><a href="#about" data-rb-event-key="#about"
-                            class="nav-link">About</a><a href="#work" data-rb-event-key="#work" class="nav-link">How We
-                            Work</a><a href="#feature" data-rb-event-key="#feature" class="nav-link">Feature</a><a
-                            href="#testmonial" data-rb-event-key="#testmonial" class="nav-link">Testimonial</a><a
-                            href="#price" data-rb-event-key="#price" class="nav-link">Price</a></div>
-                </div>
-            </div>
-        </nav>
+        {{-- @include('includes.navbar') --}}
         <section class="bg-hero hero-sections" id="home" style="background-image: url('/assets/images/home/man.jpeg');">
             <div class="layer-mobile d-md-none d-block"></div>
             <div class="container">
                 <div class="row">
                     <div class="order-md-1 order-2 col-md-6">
                         <div class="inner-content">
+                            <div class="logo text-center">
+                                <img src="{{ asset('assets/images/home/billwale.png') }}" alt="" style="">
+                            </div>
                             <p class="mt-3">Accounting and GST Billing</p>
                             <h1 class="mt-3">Software</h1>
-                            <div class="position-relative"><input type="text" placeholder="Enter Your Mobile Number"
-                                    class="mobile-get"><button class="try-btn">Get Free Trail</button></div>
-                            <div class="d-flex mt-4"><button class="inquiry-now">Inquiry Now</button><button
-                                    class="more-details ml-3">More Details</button></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-       
-        <section class="about-section px-md-5 mt-5 pb-5" id="about">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="mt-md-0 mt-5 col-md-4">
-                        <div class="single-about text-center">
-                            <div class="about-bg-main">
-                                <div class="about-bg"><img src="{{ asset('assets/images/home/tax.png') }}" alt=""></div>
+                            {{-- <div class="position-relative">
+                                <input type="text" placeholder="Enter Your Mobile Number" class="mobile-get">
+                                <button class="try-btn">Get Free Trail</button>
+                            </div> --}}
+                            <div class="d-flex mt-4">
+                                <button class="inquiry-now">Inquiry Now</button>
+                                {{-- <button class="more-details ml-3">More Details</button> --}}
                             </div>
-                            <h3>What is Lorem Ipsum?</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industrys standard dummy text ever since the 1500s, when an unknown printer
-                                took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                    </div>
-                    <div class="mt-md-0 mt-5 col-md-4">
-                        <div class="single-about text-center">
-                            <div class="about-bg-main">
-                                <div class="about-bg"><img src="{{ asset('assets/images/home/tax.png') }}" alt=""></div>
-                            </div>
-                            <h3>What is Lorem Ipsum?</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industrys standard dummy text ever since the 1500s, when an unknown printer
-                                took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                    </div>
-                    <div class="mt-md-0 mt-5 col-md-4">
-                        <div class="single-about text-center">
-                            <div class="about-bg-main">
-                                <div class="about-bg"><img src="{{ asset('assets/images/home/tax.png') }}" alt=""></div>
-                            </div>
-                            <h3>What is Lorem Ipsum?</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industrys standard dummy text ever since the 1500s, when an unknown printer
-                                took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                     </div>
                 </div>
