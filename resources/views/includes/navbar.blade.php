@@ -1,10 +1,10 @@
 <nav class="bg-header navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid"><a href="#home" class="navbar-brand"><img src="{{ asset('assets/images/home/billwale.png') }}"
+    <div class="container-fluid"><a href="/" class="navbar-brand"><img src="{{ asset('assets/images/home/billwale.png') }}"
                 alt=""></a>
             {{-- <button aria-controls="responsive-navbar-nav" type="button"
             aria-label="Toggle navigation" class="navbar-toggler collapsed"><span
                 class="navbar-toggler-icon"></span></button> --}}
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsive-navbar-nav" aria-controls="responsive-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+        {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsive-navbar-nav" aria-controls="responsive-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
         <div class="navbar-collapse collapse" id="responsive-navbar-nav">
@@ -14,6 +14,6 @@
                     Work</a><a href="#feature" data-rb-event-key="#feature" class="nav-link">Feature</a><a
                     href="#testmonial" data-rb-event-key="#testmonial" class="nav-link">Testimonial</a><a
                     href="#price" data-rb-event-key="#price" class="nav-link">Price</a></div>
-        </div>
+        </div> --}}
     </div>
 </nav>

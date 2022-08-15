@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/inquiry', [HomeController::class, 'inquiry_now'])->name('inquiry.now');
 
+Route::get('/terms_and_conditions', [HomeController::class, 'terms_and_conditions'])->name('terms_and_conditions');
+
 Route::get('/email', function() {
     // return view('emails.inquiry');
     return view('emails.thanks');

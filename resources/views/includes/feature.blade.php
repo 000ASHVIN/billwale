@@ -7,26 +7,25 @@
             <div class="col-lg-3 col-md-6"><img src="{{ asset('assets/images/home/about2.png') }}" alt="" class="w-100 pt-5"></div>
             <div class="col-lg-4 col-md-6">
                 <div class="details-inner-section">
-                    <h4 class="mb-5">Contrary to popular belief, Lorem Ipsum is not simply random text</h4>
-                    <div class="mt-2 d-flex"><img src="{{ asset('assets/images/home/check-number.png') }}" alt="" class="right-click">
-                        <p class="mt-0 ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industrys standard dummy text ever since the
-                            1500s.</p>
+                    <h4 class="mb-5">Features that simplify accounting</h4>
+                    <?php
+                        $features = ["Invoice", "Billing", "Banking", "Inventory Management", "Business Reporting", "Automation", "Credit Note", "Debit Note", "Advanced Analytics", "Online Payments", "Payment reminders"];
+                    ?>
+                    @foreach ($features as $feature)
+                        <div class="mt-2 d-flex feature">
+                            <img src="{{ asset('assets/images/home/check-number.png') }}" alt="" class="right-click">
+                            <p class="mt-0 ml-2 ">{{ $feature }}</p>
+                        </div>
+                    @endforeach                    
+                    {{-- <button class="inquiry-now mt-3">Inquiry Now</button> --}}
+                    <div class="mt-4">
+                        <a href="#inquiry-form" class="inquiry-now">Inquiry Now</a>
                     </div>
-                    <div class="mt-2 d-flex"><img src="{{ asset('assets/images/home/check-number.png') }}" alt="" class="right-click">
-                        <p class="mt-0 ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industrys standard dummy text ever since the
-                            1500s.</p>
-                    </div>
-                    <div class="mt-2 d-flex"><img src="{{ asset('assets/images/home/check-number.png') }}" alt="" class="right-click">
-                        <p class="mt-0 ml-2">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industrys standard dummy text ever since the
-                            1500s.</p>
-                    </div><button class="inquiry-now mt-3">Inquiry Now</button>
+                    
                 </div>
             </div>
 
-            <div class="col-lg-5 col-md-12">
+            <div class="col-lg-5 col-md-12" id="inquiry-form">
                 <div class="form-info">
                     <div class="inquiry-now-title row">
                         <div class="col-md-12">

@@ -36,4 +36,8 @@ class HomeController extends Controller
         
         return redirect()->back();
     }
+
+    public function terms_and_conditions() {
+        return view('terms_and_conditions');
+    }
 }

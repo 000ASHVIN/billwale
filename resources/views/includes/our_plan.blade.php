@@ -32,7 +32,10 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="single-plan-section-main">
+                <div class="single-plan-section-main single-plan-section-main-populer">
+                    <div class="most-popular">
+                        <h3>Most Popular</h3>
+                    </div>
                     <div class="single-plan-section">
                         <h3 class="title-plan">Standard Plan</h3>
                         <div class="d-flex align-items-center price-discount"><del>₹3000</del>
@@ -61,10 +64,8 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <div class="single-plan-section-main single-plan-section-main-populer">
-                    <div class="most-popular">
-                        <h3>Most Popular</h3>
-                    </div>
+                <div class="single-plan-section-main ">
+                    
                     <div class="single-plan-section">
                         <h3 class="title-plan">Premium Plan</h3>
                         <div class="d-flex align-items-center price-discount"><del>₹5000</del>
