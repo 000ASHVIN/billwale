@@ -81,7 +81,7 @@
                             <div class="col-md-12 form-group">
                                 <div class="terms_and_condition">
                                     <input type="checkbox" name="terms" name="terms" id="terms">
-                                    <label for="terms">Terms and Condition</label>
+                                    <label for="terms">I Accept The</label><label><a class="terms_link" target="_blank" href="/terms_and_conditions">Terms and Condition</a></label>
                                     
                                 </div>
                                 <p class="terms_error error" style="display: none;"><b>Please accept terms and conditions.</b></p>

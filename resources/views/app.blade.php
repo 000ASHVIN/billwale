@@ -117,6 +117,10 @@
             padding: 12px 0 8px;
             font-weight: bold;
         }
+       .terms_link {
+            color: #122F97;
+            text-decoration: none;
+       }
     </style>
 
     @yield('style')
