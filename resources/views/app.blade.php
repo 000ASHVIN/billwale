@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Billvale</title>
+    <title>Billwale</title>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -142,7 +142,7 @@
                             href="#price">Price</a></div>
                     <div class="copyrights">
                         <div class="copy-right-inner d-lg-flex align-items-center justify-content-between">
-                            <p>Copyright @ Billvale {{ date('Y') }}</p>
+                            <p>Copyright @ Billwale {{ date('Y') }}</p>
                             <div><a href="#">Privacy Policy</a><a href="/terms_and_conditions">Terms &amp; Condition</a></div>
                         </div>
                     </div>
