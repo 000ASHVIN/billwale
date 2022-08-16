@@ -16,7 +16,7 @@
                     </ul>
                     
                     <div class="d-flex mt-4">
-                        <a href="#inquiry-form" class="inquiry-now">Inquiry Now</a>
+                        <a href="#inquiry-form" class="inquiry-now">Pre-Book Now for Free</a>
                     </div>
                 </div>
             </div>
