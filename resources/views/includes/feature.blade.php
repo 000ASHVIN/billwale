@@ -29,7 +29,7 @@
                 <div class="form-info">
                     <div class="inquiry-now-title row">
                         <div class="col-md-12">
-                            <h3>INQUIRY NOW</h3>
+                            <h3>Pre-Book Now for Free</h3>
                         </div>
                     </div>
                     <form action="/inquiry" method="post" id="inquiry_form">
@@ -87,8 +87,8 @@
                                 <p class="terms_error error" style="display: none;"><b>Please accept terms and conditions.</b></p>
                             </div>
 
-                            <div class="col-md-12 form-group form-submit">                                  
-                                <button class="bg-submit" type="submit">
+                            <div class="col-md-12 form-group form-submit ">                                  
+                                <button class=" inquiry-now" type="submit">
                                     <span class="spinner-border text-light" role="status" style="display: none;">
                                         <span class="sr-only"></span>
                                     </span>

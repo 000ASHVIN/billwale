@@ -9,7 +9,7 @@
     @include('includes.benifits')
     @include('includes.feature')
     {{-- @include('includes.work') --}}
-    @include('includes.testmonial')
+    {{-- @include('includes.testmonial') --}}
 
     @include('includes.our_plan')
 

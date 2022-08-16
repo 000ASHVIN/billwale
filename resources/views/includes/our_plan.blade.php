@@ -1,4 +1,4 @@
-<section class="plan-section px-md-5 px-0" id="price">
+<section class="plan-section gray-back px-md-5 px-0" id="price">
     <h3 class="title">Our plan</h3>
     <div class="container-fluid">
         <div class="mt-5 row our_plan">
