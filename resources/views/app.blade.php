@@ -50,9 +50,10 @@
             color: red !important;
         }
         .logo img {
-            background-color: #122F97;
+            /* background-color: #122F97; */
             margin-top: 20px;
             padding: 15px 30px;
+            width: 50%;
         }
         .inquiry_form > div {
             margin-bottom: 10px;
@@ -135,7 +136,7 @@
         <div class="footer-custom">
             <section>
                 <div class="p-0 container">
-                    <div class="text-center"><img src="{{ asset('assets/images/home/billwale.png') }}" alt=""></div>
+                    <div class="text-center"><img src="{{ asset('assets/images/logo/whitelogo-mini.png') }}" alt="" width="200"></div>
                     <div class="footer-liink"><a href="#home">Home</a><a href="#about">About</a><a href="#work">How We
                             Work</a><a href="#feature">Feature</a><a href="#testmonial">Testiimonial</a><a
                             href="#price">Price</a></div>

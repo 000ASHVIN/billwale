@@ -1,5 +1,5 @@
 <nav class="bg-header navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid"><a href="/" class="navbar-brand"><img src="{{ asset('assets/images/home/billwale.png') }}"
+    <div class="container-fluid"><a href="/" class="navbar-brand"><img src="{{ asset('assets/images/logo/whitelogo-mini.png') }}"
                 alt=""></a>
             {{-- <button aria-controls="responsive-navbar-nav" type="button"
             aria-label="Toggle navigation" class="navbar-toggler collapsed"><span

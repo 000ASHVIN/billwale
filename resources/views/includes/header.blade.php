@@ -4,8 +4,8 @@
         <div class="row">
             <div class="order-md-1 order-2 col-md-6">
                 <div class="inner-content">
-                    <div class="logo text-center">
-                        <img src="{{ asset('assets/images/home/billwale.png') }}" alt="" style="">
+                    <div class="logo">
+                        <img src="{{ asset('assets/images/logo/blue-orange-mini.png') }}" alt="" style="">
                     </div>
                     <p class="mt-3">Accounting and GST Billing</p>
                     <h1 class="mt-3">Software</h1>
