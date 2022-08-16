@@ -1,8 +1,8 @@
 <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center" style="background-color: #122F97;">
-        <a class="navbar-brand brand-logo text-center" href="/admin"><img src="{{ asset('assets/images/home/billwale.png') }}" class="mr-2"
+        <a class="navbar-brand brand-logo text-center" href="/admin"><img src="{{ asset('assets/images/logo/whitelogo-mini.png') }}" class="mr-2"
                 alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="/admin"><img src="{{ asset('assets/images/home/billwale.png') }}"
+        <a class="navbar-brand brand-logo-mini" href="/admin"><img src="{{ asset('assets/images/logo/whitelogo-mini.png') }}"
                 alt="logo" /></a>
     </div>
     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
