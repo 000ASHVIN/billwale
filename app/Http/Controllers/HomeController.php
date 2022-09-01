@@ -29,7 +29,7 @@ class HomeController extends Controller
         ]);
         $data = $request->all();
         $inquiery = Inquiry::create($data);
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new NewInquiry($inquiery));
+        // Mail::to(env('MAIL_FROM_ADDRESS'))->send(new NewInquiry($inquiery));
         Mail::to($inquiery->email)->send(new InquiryThanks($inquiery->name));
 
         $request->session()->flash('status', 'Thanks for inquiry!');
