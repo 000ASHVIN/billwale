@@ -36,5 +36,7 @@ Route::group(['prefix'=>'admin','as'=>'admin.'], function(){
         Route::get('/', [DashboardController::class, 'index'])->name('index');
         Route::get('/inquiries', [DashboardController::class, 'inquiries'])->name('inquiries');
         Route::get('/inquiries/list', [DashboardController::class, 'inquiries_list'])->name('inquiries.list');
+        Route::get('/inquiries/export', [DashboardController::class, 'export_inquiries'])->name('inquiries.export');
+        Route::get('/inquiry/{id}/delete', [DashboardController::class, 'delete_inquiry'])->name('inquiries.delete');
     });    
 });

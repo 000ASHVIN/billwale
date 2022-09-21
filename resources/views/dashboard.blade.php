@@ -79,10 +79,11 @@
         });
 
         $( ".bg-submit" ).click(function() {
-            console.log($('#inquiry_form').valid())
             if($('#inquiry_form').valid()) {
                 $('.spinner-border').show();
+                // $(this).find('button').prop('disabled', true);
             }
+
             // alert( "Valid: " + form.valid() );
         });
 

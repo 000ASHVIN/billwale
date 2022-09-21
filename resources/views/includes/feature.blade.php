@@ -87,7 +87,7 @@
                                 <p class="terms_error error" style="display: none;"><b>Please accept terms and conditions.</b></p>
                             </div>
 
-                            <div class="col-md-12 form-group form-submit ">                                  
+                            <div class="col-md-12 form-group form-submit bg-submit">                                  
                                 <button class=" inquiry-now" type="submit">
                                     <span class="spinner-border text-light" role="status" style="display: none;">
                                         <span class="sr-only"></span>

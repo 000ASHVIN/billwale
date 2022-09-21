@@ -8,6 +8,11 @@
                 <h3 class="font-weight-bold">Inquiry List</h3>
             </div>
             <div class="col-12">
+                <div class="float-right">
+                    <a href="/admin/inquiries/export" class="btn btn-primary">Export</a>
+                </div>
+            </div>
+            <div class="col-12">
                 <table class="table" id="inquiry_table">
                     <thead>
                         <tr>
@@ -19,7 +24,7 @@
                             <th class="text-center">Phone</th>
                             <th class="text-center">State</th>
                             <th class="text-center">City</th>
-                            {{-- <th class="text-center">Actions</th> --}}
+                            <th class="text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -38,6 +43,7 @@
   var table = $('#inquiry_table').DataTable({
         processing: true,
         serverSide: true,
+        "ordering": false,
         ajax: "{{ route('admin.inquiries.list') }}",
         columns: [
             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
@@ -48,7 +54,7 @@
             {data: 'phone', name: 'phone'},
             {data: 'state', name: 'state'},
             {data: 'city', name: 'city'},
-            // {data: 'action', name: 'action', orderable: false, searchable: false},
+            {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });
 </script>
